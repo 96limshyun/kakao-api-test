@@ -1,5 +1,6 @@
 export const theme = {
     fontSize: {
+        "0.5": "0.8rem",
         "1": "1rem",
         "2": "1.5rem",
         "3": "2rem",

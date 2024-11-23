@@ -62,4 +62,8 @@ const CustomButton = styled.button<{
     font-weight: ${({ $fontWeight }) => theme.fontWeight[$fontWeight]};
     border: ${({ $border }) => $border};
     border-radius: ${({ $borderRadius }) => $borderRadius};
+
+    &:hover {
+        cursor: pointer;
+    }
 `;

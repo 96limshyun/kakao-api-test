@@ -8,6 +8,7 @@ import { DEFAULT_MENU_INDEX } from "@/constants/index";
 import { MenuName } from "@/types/menu";
 
 const defaultMenuName = NAVIGATION_MENU[DEFAULT_MENU_INDEX].name;
+
 const Navigation = () => {
     const [selectedMenu, setSelectedMenu] = useState<MenuName>(defaultMenuName);
 
@@ -46,8 +47,6 @@ const Navigation = () => {
 export default Navigation;
 
 const NavigationContainer = styled.section`
-    width: 100%;
-    height: 80px;
     display: flex;
     align-items: center;
 `;
@@ -64,8 +63,9 @@ const NavigationWrap = styled.div`
 const NavigationMenu = styled.ul`
     display: flex;
     list-style: none;
-    padding: 0;
-    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 `;
 
 const NavItem = styled.li`

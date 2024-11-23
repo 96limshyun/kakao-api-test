@@ -6,3 +6,4 @@ export const NAVIGATION_MENU: MenuType[] = [
 ]
 
 export const DEFAULT_MENU_INDEX = 0;
+export const DEFAULT_GLOBAL_TARGET = "title"
